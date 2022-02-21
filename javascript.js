@@ -11,8 +11,13 @@ function addToDo (text) {
     toDoList.appendChild(li);
 
 }
+function removeText (){
+    document.getElementById("txt").value = "";
+    
+}
 form.onsubmit = (e)=> {
     
     addToDo(input.value);
     e.preventDefault();
+    removeText();
 }
