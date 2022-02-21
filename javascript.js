@@ -11,5 +11,8 @@ function addToDo (text) {
     toDoList.appendChild(li);
 
 }
-form.onsubmit = (e)=> addToDo(input.value);
+form.onsubmit = (e)=> {
     
+    addToDo(input.value);
+    e.preventDefault();
+}
